@@ -37,20 +37,20 @@ html:
 javascript:
 
 ```javascript
-$(function() {
-    var $left = $('#left'),
-        $input = $('#input');
+(function() {
+  var $left = $('#left'),
+      $input = $('#input');
 
-    $input.autocomplete({
+  $input.autocomplete({
     target: $left,
     items: [
-        'item1',
-        'item2',
-        'thisisasentence',
-        'showmethemoney',
-        '这是一段中文'
+      'item1',
+      'item2',
+      'thisisasentence',
+      'showmethemoney',
+      '这是一段中文'
     ]
-    });
+  });
 });
 ```
     
