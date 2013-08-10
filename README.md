@@ -9,44 +9,50 @@ Maybe it's not convenient enough to use, but it performs well. You'd better have
 
 css: 
 
-    #input,#left {
-      border: 1px dotted #000;
-      outline: 0;
-      position: absolute;
-      left: 100px;
-      float: left;
-    }
-    
-    #input {
-      background-color: #fff;
-    }
-    
-    #left {
-      background-color: #ccc;
-    }
+```css
+#input,#left {
+    border: 1px dotted #000;
+    outline: 0;
+    position: absolute;
+    left: 100px;
+    float: left;
+}
+
+#input {
+    background-color: #fff;
+}
+
+#left {
+    background-color: #ccc;
+}
+```
 
 html:
 
-    <span id="left"></span>
-    <span contenteditable=true id="input"></span>
+```html
+<span id="left"></span>
+<span contenteditable=true id="input"></span>
+```
 
 javascript:
 
-    $(function() {
-      var $left = $('#left'),
-          $input = $('#input');
-    
-      $input.autocomplete({
-        target: $left,
-        items: [
-          'item1',
-          'item2',
-          'thisisasentence',
-          'showmethemoney',
-          '这是一段中文'
-        ]
-      });
+```javascript
+$(function() {
+    var $left = $('#left'),
+        $input = $('#input');
+
+    $input.autocomplete({
+    target: $left,
+    items: [
+        'item1',
+        'item2',
+        'thisisasentence',
+        'showmethemoney',
+        '这是一段中文'
+    ]
     });
+});
+```
     
 ## License
 
